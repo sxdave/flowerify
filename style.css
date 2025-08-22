@@ -1,0 +1,163 @@
+@font-face {
+    font-family: "Gamilia";
+    src: url(https://www.fontspace.com/gamilia-font-f101878) format("truetype");
+}
+
+@font-face {
+    font-family: "Libertia";
+    src: url(https://www.fontspace.com/linux-libertine-font-f13283) format("truetype");
+}
+
+/* index_html */
+.home-page {
+    background-color: #FCFFE0
+}
+
+.header {
+    background-color: #F3F8C6;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.website-font {
+    font-family: 'Gamilia';
+    font-size: 90px;
+    color: #75A47F;
+    margin-bottom: 25px;
+}
+
+.login-button {
+    background-color: #BACD92;
+    border: none;
+    height: 60px;
+    width: 150px;
+    border-radius: 3px;
+    transition: all 0.3s ease
+}
+
+.home-button {
+    background-color: #BACD92;
+    border: none;
+    height: 45px;
+    width: 120px;
+    margin-right: 8px;
+    border-radius: 3px;
+
+}
+
+.about-button {
+    background-color: #BACD92;
+    border: none;
+    height: 45px;
+    width: 120px;
+    border-radius: 3px;
+}
+
+.login-button:hover {
+    background-color: #75A47F;
+    transform: scale(1.25) perspective(1px)
+}
+
+.about-button:hover {
+    background-color: #75A47F;
+}
+
+.home-button:hover {
+    background-color: #75A47F;
+}
+
+.overall-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F9E5DF;
+    border-radius: 8px;
+}
+
+.intro-box {
+    width: 40%;
+    padding-left: 100px
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); */
+    /* display: inline-block */
+}
+
+.flower-image {
+    width: 40%;
+    padding-right: 100px
+    /* display: inline-block */
+}
+
+.no-underline {
+    color: white;
+    text-decoration: none
+}
+
+/* about_html */
+.header-text {
+    font-family: 'Gamilia';
+    font-size: 36px;
+    color: #75A47F;
+    margin-bottom: 25px;
+}
+
+.sub-text {
+    font-family: 'Libertia';
+    font-size: 28px;
+    color: #658d6e;
+    margin-bottom: 15px;
+}
+
+.submost-text {
+    font-family: 'Libertia';
+    font-size: 20px;
+    color: #55785d;
+    margin-bottom: 15px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 20px;
+    justify-content: start;
+    max-width: 400px;
+}
+
+.image-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    border-radius: 8px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+/* main_html */
