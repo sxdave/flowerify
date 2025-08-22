@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flowerify Application V1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+ 
+<body class = "home-page">
+    <div class = "header"> 
+        <button class = "home-button"> 
+            <a href = '/' class = "no-underline"> Home </a>
+        </button>
+        <button class = "about-button"> 
+            <a href = '/about' class = "no-underline"> About</a>
+        </button>
+    </div>
+    <div class = "overall-boxes">
+        <div class = "intro-box">
+            <h1 class = "website-font">Flowerify</h1>
+            <button class = "login-button"> 
+                <a href = '/login' class = "no-underline"> Log In</a>
+            </button>
+        </div>
+        <div class = "flower-image">
+            <img src = "static/images/flower.gif">
+        </div>
+    </div>
+</body>
+</html>

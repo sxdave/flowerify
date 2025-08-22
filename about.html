@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flowerify Application V1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+ 
+<body class = "home-page">
+    <div class = "header"> 
+        <button class = "home-button"> 
+            <a href = '/' class = "no-underline"> Home </a>
+        </button>
+        <button class = "about-button"> 
+            <a href = '/about' class = "no-underline"> About</a>
+        </button>
+    </div>
+    <div class = "overall-boxes">
+        <div class = "flower-image">
+            <img src = "static/images/flower.gif">
+        </div>
+        <div class = "intro">
+            <h1 class = "header-text"> What is Flowerify? </h1>
+                <h3 class = "submost-text"> The goal of Flowerify is to help you understand your Spotify listening. It uses Spotify's Web API to track your listening (over the last year, 6 months or month) and display your top artists, songs and genres. </h3>
+            <h1 class = "header-text"> Frequently Asked Questions </h1>
+                <h2 class = "sub-text"> 1. What is the Flowerify analysis? </h2>
+                    <h3 class = "submost-text"> The flowerify analysis is a culmination of ...</h3>
+                <h2 class = "sub-text"> 2. Is my data secure? </h2>
+                    <h3 class = submost-text> Flowerify uses the Spotify Web API which ensures that logging into your account is handled by Spotify. </h3>
+                <h2 class = "sub-text"> 3. How are my top artists, songs, genres determined? </h2>
+                    <h3 class = submost-text> Flowerify uses your listening history from the last year, six months or month to determine your top artists, songs, genres for that listening period.</h3>
+        </div>
+    </div>
+</body>
+</html>

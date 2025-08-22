@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flowerify Application V1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+ 
+<body class = "home-page">
+    <div class = "header"> 
+        <button class = "home-button"> 
+            <a href = '/' class = "no-underline"> Home </a>
+        </button>
+        <button class = "about-button"> 
+            <a href = '/about' class = "no-underline"> About</a>
+        </button>
+    </div>
+    <div class = "header"> 
+        <button class = "about-button"> 
+            <a href = '/flowerify/short_term' class = "no-underline"> Short Term </a>
+        </button>
+        <button class = "about-button"> 
+            <a href = '/flowerify/medium_term' class = "no-underline"> Medium Term </a>
+        </button>
+        <button class = "about-button"> 
+            <a href = '/flowerify/long_term' class = "no-underline"> Long Term </a>
+        </button>
+    </div>
+    <div class="image-grid">
+        {% for i in range(tracks|length) %}
+        <div class="image-container">
+            <img src="{{ track_images[i] }}" width="120" height="120">
+            <div class="overlay">
+                <p>{{ tracks[i] }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <!-- <div class = "overall-boxes">
+        <div class = "intro-box">
+            {% for track in tracks %}
+            <h1 class = "submost-text">{{track}}</h1>
+            {% endfor %}
+        </div>
+        <div class = "flower-image">
+            {% for image in track_images %}
+            <img src = {{image}}  width="120" height="120">
+            {% endfor %}
+        </div>
+    </div>
+    <div class = "overall-boxes">
+        <div class = "intro-box">
+            {% for artist in artists %}
+            <h1 class = "submost-text">{{artist}}</h1>
+            {% endfor %}
+        </div>
+        <div class = "flower-image">
+            {% for image in artist_images %}
+            <img src = {{image}}  width="120" height="120">
+            {% endfor %}
+        </div>
+    </div> -->
+</body>
+</html>
